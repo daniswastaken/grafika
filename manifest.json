@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "Grafika Shader",
-    "description": "OSS anime-like shader.",
+    "description": "OSS Anime-like Shader.\nRequire BRD or Minecraft Patched.",
     "uuid": "e9e83d81-8020-4b73-85c0-dd9a60a47c6b",
     "version": [
       1,

@@ -1,7 +1,5 @@
-Copyright © 2025 devendrn, and "Newb Shader" Contributors
+Copyright (c) 2026 daniswastaken
 
-This compiled "Newb Shader" resource pack (source code: https://github.com/devendrn/newb-x-mcbe under MIT License) is licensed under CC BY-ND 4.0 (https://creativecommons.org/licenses/by-nd/4.0/). Redistribute only unmodified copies with proper attribution to "Newb Shader" and variant creators (if any). Do not distribute derivatives.
+Grafika Shader is built from the modified Newb Shader source code (https://github.com/devendrn/newb-x-mcbe) under MIT License.
 
-You can compile the shader from source and distribute the result under your own terms (compatible with the MIT License).
-
-Contact (Discord Server): https://discord.gg/newb-community-844591537430069279
+Source code for Grafika Shader can be found here: https://github.com/daniswastaken/grafika-dev && https://github.com/daniswastaken/grafika
