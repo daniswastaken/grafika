@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Grafika Shader",
-    "description": "OSS Anime-like Shader.\nRequire BRD or Minecraft Patched.",
+    "name": "§lGrafika§r §fShader",
+    "description": "§b§lAn open-source anime-style shader pack.§r\n§eRequires §6BetterRenderDragon (BRD) §eor §6Minecraft Patched.",
     "uuid": "e9e83d81-8020-4b73-85c0-dd9a60a47c6b",
     "version": [
       1,
