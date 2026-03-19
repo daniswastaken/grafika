@@ -1,9 +1,6 @@
 // This basically the same exact copy of the
 // original entity file  but mapped into different
 // materials for the outline base
-// PS: the use of animation controller child
-// is not allowed for whatever reason
-// thus you need to remove it
 {
   "format_version": "1.10.0",
   "minecraft:client_entity": {
