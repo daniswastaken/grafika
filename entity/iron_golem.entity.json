@@ -1,0 +1,60 @@
+// This basically the same exact copy of the
+// original entity file  but mapped into different
+// materials for the outline base
+// PS: the use of animation controller child
+// is not allowed for whatever reason
+// thus you need to remove it
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:iron_golem",
+      "materials": {
+        "default": "general_outline_base",  // Replace the original default materials with this
+                                            // Must have due to custom material keeping the base on front.
+        "outline": "general_outline" // For outline.
+      },
+      "textures": {
+        "default": "textures/entity/iron_golem",
+        "outline": "textures/ui/White", // Outline texture
+        "cracked_high": "textures/entity/iron_golem/cracked_high",
+        "cracked_med": "textures/entity/iron_golem/cracked_medium",
+        "cracked_low": "textures/entity/iron_golem/cracked_low",
+        "cracked_none": "textures/entity/iron_golem/cracked_none"
+      },
+      "geometry": {
+        "default": "geometry.irongolem", // Original entity model
+        "outline": "geometry.irongolem.outline" // Outline geometry - Same as base but inflated.
+      },
+      "animations": {
+        "walk": "animation.iron_golem.walk",
+        "move": "animation.iron_golem.move",
+        "attack": "animation.iron_golem.attack",
+        "flower": "animation.iron_golem.flower",
+        "look_at_target": "animation.common.look_at_target",
+        "walk_to_target": "animation.iron_golem.walk_to_target",
+        "move_to_target": "animation.iron_golem.move_to_target",
+        "move_controller": "controller.animation.iron_golem.move",
+        "arm_controller": "controller.animation.iron_golem.arm_movement"
+      },
+      "render_controllers": [
+        "controller.render.iron_golem",
+        "controller.render.iron_golem_cracks",
+        "controller.render.entity.outline" // For the outline render
+      ],
+      "scripts": {
+        "pre_animation": [
+          "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+        ],
+        "animate": [
+          "look_at_target",
+          "move_controller",
+          "arm_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg_iron_golem"
+      }
+    }
+  }
+}
