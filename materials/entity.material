@@ -70,6 +70,62 @@
         "stencilPassOp": "Replace"
       },
       "stencilRef": 32
+    },
+    "general_outline_base:entity_alphatest": {
+      "+states": [ "EnableStencilTest", "StencilWrite" ],
+      "-states": [ "DisableCulling" ],
+      "+defines": [ "USE_OVERLAY" ],
+      "frontFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "backFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "stencilRef": 32
+    },
+    "general_outline:entity_static": {
+      "+states": [ "InvertCulling", "EnableStencilTest", "DisableDepthWrite", "Blending" ],
+      "+defines": [ "USE_OVERLAY" ],
+      "-states": [ "DisableCulling" ],
+      "-defines": [ "FANCY" ],
+      // Uncomment if you want outline to render behind the wall.
+      // "depthFunc": "Always",
+      "frontFace": {
+        "stencilFunc": "NotEqual"
+      },
+      "backFace": {
+        "stencilFunc": "Equal"
+      },
+      "stencilRef": 32,
+      "stencilReadMark": 32
+    },
+    // Allows the texture to have some transparency.
+    "general_outline_blend:entity_emissive_alpha": {
+      "+states": [ "InvertCulling", "EnableStencilTest", "DisableDepthWrite", "Blending" ],
+      "+defines": [ "USE_OVERLAY", "DisableCulling" ],
+      "-defines": [ "FANCY" ],
+      // Uncomment if you want outline to render behind the wall.
+      // "depthFunc": "Always",
+      "frontFace": {
+        "stencilFunc": "NotEqual",
+        "stencilPassOp": "Replace"
+      },
+      "backFace": {
+        "stencilFunc": "NotEqual",
+        "stencilPassOp": "Replace"
+      },
+      "stencilRef": 64,
+      "stencilReadMark": 64,
+      "msaaSupport": "Both"
+      //"blendSrc": "One",
+      //"blendDst": "One"
+      //"blendDst": "OneMinusSrcAlpha"
     }
   }
 }
