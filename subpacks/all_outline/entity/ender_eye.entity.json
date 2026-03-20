@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:eye_of_ender_signal",
+      "materials": {
+        "default": "general_outline_base",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/items/ender_eye",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.item_sprite",
+        "outline": "geometry.item_sprite.outline"
+      },
+      "render_controllers": [
+        "controller.render.item_sprite",
+        "controller.render.entity.outline"
+      ],
+      "animations": {
+        "flying": "animation.actor.billboard"
+      },
+      "scripts": {
+        "animate": [
+          "flying"
+        ]
+      }
+    }
+  }
+}

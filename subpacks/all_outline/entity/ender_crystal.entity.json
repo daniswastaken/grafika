@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:ender_crystal",
+      "materials": {
+        "default": "general_outline_base",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/entity/endercrystal/endercrystal",
+        "beam": "textures/entity/endercrystal/endercrystal_beam",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.ender_crystal",
+        "outline": "geometry.ender_crystal.outline"
+      },
+      "animations": {
+        "move": "animation.ender_crystal.move"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.time_offset = Math.random(0, 100000);"
+        ],
+        "animate": [
+          "move"
+        ],
+        "should_update_effects_offscreen": "1.0"
+      },
+      "render_controllers": [
+        "controller.render.ender_crystal",
+        "controller.render.entity.outline"
+      ]
+    }
+  }
+}

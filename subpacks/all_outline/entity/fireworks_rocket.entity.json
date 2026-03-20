@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:fireworks_rocket",
+      "materials": {
+        "default": "general_outline_base",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/entity/fireworks",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.fireworks_rocket",
+        "outline": "geometry.fireworks_rocket.outline"
+      },
+      "animations": {
+        "move": "animation.fireworks_rocket.move"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.fireworks_rocket",
+        "controller.render.entity.outline"
+      ]
+    }
+  }
+}

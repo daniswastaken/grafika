@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:witch",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "general_outline_base",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/entity/witch",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.villager.witch.v1.8",
+        "outline": "geometry.villager.witch.v1.8.outline"
+      },
+      "scripts": {
+        "scale": "0.9375"
+      },
+      "animations": {
+        "villager_general": "animation.villager.general",
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.villager.move",
+        "general": "animation.witch.general"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.witch.general"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.witch",
+        "controller.render.entity.outline"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_witch"
+      }
+    }
+  }
+}

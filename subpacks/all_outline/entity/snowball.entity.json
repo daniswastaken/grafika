@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:snowball",
+      "materials": {
+        "default": "general_outline_base",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/items/snowball",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.item_sprite",
+        "outline": "geometry.item_sprite.outline"
+      },
+      "render_controllers": [
+        "controller.render.item_sprite",
+        "controller.render.entity.outline"
+      ],
+      "animations": {
+        "flying": "animation.actor.billboard"
+      },
+      "scripts": {
+        "animate": [
+          "flying"
+        ]
+      }
+    }
+  }
+}

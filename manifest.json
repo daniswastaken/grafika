@@ -3,7 +3,7 @@
   "header": {
     "name": "§lGrafika§r §fShader",
     "description": "§b§lAn open-source anime-style shader pack.§r\n§eRequires §6BetterRenderDragon (BRD) §eor §6Minecraft Patched.",
-    "uuid": "e9e83d81-8020-4b73-85c0-dd9a60a47c6b",
+    "uuid": "a794ebf9-e3ba-4e0a-898e-69d017668eb2",
     "version": [
       1,
       0,
@@ -18,12 +18,29 @@
   "modules": [
     {
       "type": "resources",
-      "uuid": "080c053e-449b-4ba5-a7b4-9e0a03a556a9",
+      "uuid": "94a3e43c-276b-425a-b541-98465ebdb408",
       "version": [
         1,
         0,
         0
       ]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "shader",
+      "name": "Shader Only",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "all_outline",
+      "name": "All Outline",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "player_outline",
+      "name": "Player Outline Only",
+      "memory_tier": 1
     }
   ],
   "metadata": {

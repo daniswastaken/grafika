@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:silverfish",
+      "materials": {
+        "default": "general_outline_base",
+        "body_layer": "silverfish_layers",
+        "outline": "general_outline"
+      },
+      "textures": {
+        "default": "textures/entity/silverfish",
+        "outline": "textures/ui/White"
+      },
+      "geometry": {
+        "default": "geometry.silverfish",
+        "outline": "geometry.silverfish.outline"
+      },
+      "animations": {
+        "move": "animation.silverfish.move"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.silverfish.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.silverfish",
+        "controller.render.entity.outline"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_silverfish"
+      }
+    }
+  }
+}
