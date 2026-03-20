@@ -1,80 +1,83 @@
-# Experimental Decoupled Outline RP (White ESP)
+# Grafika Shader
 
-This Resource Pack (RP) provides a permanent, white ESP outline for players. It has been fully decoupled from Behavior Pack (BP) dependencies, meaning it functions standalone based on Minecraft's client-side rendering engine (Stencil Buffer).
+**Grafika** is a high-performance, anime-style shader pack for Minecraft Bedrock (RenderDragon). It combines advanced environmental rendering with a standalone **Stencil Outline System** for a next-gen visual experience.
 
----
+## 🎨 Why Anime-Style?
+The "anime-style" branding comes from the pack's emphasis on clean, bold visual separation. Just like the hand-drawn outlines in classic animation, our **Stencil Outline System** provides every entity with a sharp border. This creates a distinct visual hierarchy where players and mobs are clearly defined against the world's backgrounds.
 
-## 🛠 How the System Works
+> [!IMPORTANT]
+> This pack requires **BetterRenderDragon (BRD)** or **Minecraft Patched** to function correctly.
 
-The outline effect is achieved using **Stencil Masking**. This is a two-pass rendering process:
+## ✨ Core Features
 
-1.  **The Mask (Base Mesh):** The base entity model (player skin, armor, cape, etc.) is rendered using the `outline_base` material. This material writes a specific value (Ref 32) into the Stencil Buffer.
-2.  **The Outline (Overlay):** A second, slightly larger geometry is rendered using the `outline` material. This material is configured to:
-    - **Depth Test: Always** (This creates the ESP effect, allowing it to be seen through walls).
-    - **Stencil Test: NotEqual** (It only renders pixels where the stencil value is *not* 32).
-    - Since the base mesh already filled the stencil buffer at the player's position, the larger outline only renders in the "halo" around the player.
+### 🌌 Shipped Shader Features
+- **The Singularity (End Sky)**: A cinematic, procedurally rendered black hole with realistic gravitational lensing and accretion rings.
+- **Glowing Ores**: High-visibility, shimmering emissive textures for all ores, making cave exploration both beautiful and efficient.
+- **Enhanced Lava**: Dynamic noise-based lava "bump" patterns for more realistic volcanic environments.
+- **Atmospheric Rendering**: Custom sun/moon paths, refined fogs, and vibrant, multi-layered End lighting.
 
-### Why was it breaking before?
-In previous versions, the base mesh only used `outline_base` if certain Behavior Pack properties were met. If those properties failed, the base mesh wouldn't write to the stencil buffer, causing the "Always Visible" outline to fill the entire player model, resulting in a solid white silhouette.
+### 🔥 Stencil Outline System (ESP)
+Grafika provides an option for a permanent, white ESP outline for players and mobs. This is built entirely on Minecraft's client-side rendering engine (Stencil Buffer) and requires no Behavior Packs.
 
----
+#### How it Works:
+1. **The Mask (Base Mesh)**: The entity mesh is rendered with `outline_base`, writing a reference value (32) to the Stencil Buffer.
+2. **The Outline (Overlay)**: A second, slightly larger geometry is rendered with `outline`. It only draws where the stencil value is **NotEqual** to 32, creating a perfect halo.
 
-## 📁 Component Breakdown
-
-### 1. Materials (`materials/entity.material`)
-- `outline_base`: Writes to the Stencil Buffer. Must be used by the **Underlying Mesh**.
-- `outline`: The actual glowing effect. Uses `depthFunc: Always` for ESP work.
-
-### 2. Render Controllers
-- **Base Controllers (`player.render_controllers.json` etc.):** Forced to use `Material.outline_base` globally.
-- **Overlay Controllers (`slim/outline_player.render_controllers.json` etc.):**
-    - Material: `Material.outline`
-    - Color: Fixed at `{ 1.0, 1.0, 1.0, 1.0 }` (White).
-    - `ignore_lighting: true`: Ensures the white remains vibrant in the dark.
-
-### 3. Entity Definition (`entity/player.entity.json`)
-- **Render Stack:** The base mesh controllers are listed **before** the outline controllers. This order is mandatory for the stencil mask to exist when the outline tries to read it.
-- **Property Free:** All `q.property` calls were removed. Skin type (Slim/Wide) is now detected via bone pivots.
+## 📁 Subpack Configuration
+Grafika is modular. You can select your preferred configuration in the Resource Pack settings:
+- **Shader Only**: Use only the environmental shaders without entity outlines.
+- **Player Outline Only**: Apply the outline/ESP effect only to player entities.
+- **All Outline §6[BETA]**: Enable outlines for all supported mobs and players.
 
 ---
 
 ## 🚀 How to Expand to Other Mobs
 
-To add this effect to a new mob (e.g., a Zombie), follow these steps:
+To add the outline effect to a new mob (e.g., a Zombie), follow these steps:
 
 ### Phase 1: Preparation
+
 1. Create a larger "outline" version of the mob's geometry (usually by inflating the cubes slightly in Blockbench).
 2. Add the mob's base texture and the outline geometry to the mob's `.entity.json`.
 
 ### Phase 2: Stencil Masking
+
 Modify the mob's standard Render Controller (e.g., `controller.render.zombie`):
+
 - Change the material from `default` to `outline_base`.
 - This ensures the zombie writes to the stencil buffer.
 
 ### Phase 3: The Outline Controller
+
 Create a new render controller `controller.render.zombie_outline`:
+
 ```json
 {
-  "format_version": "1.10.0",
-  "render_controllers": {
-    "controller.render.zombie_outline": {
-      "geometry": "Geometry.zombie_outline",
-      "materials": [ { "*": "Material.outline" } ],
-      "textures": [ "Texture.default" ],
-      "overlay_color": { "r": 1.0, "g": 1.0, "b": 1.0, "a": 1.0 },
-      "ignore_lighting": true
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.zombie_outline": {
+            "geometry": "Geometry.zombie_outline",
+            "materials": [{ "*": "Material.outline" }],
+            "textures": ["Texture.default"],
+            "overlay_color": { "r": 1.0, "g": 1.0, "b": 1.0, "a": 1.0 },
+            "ignore_lighting": true
+        }
     }
-  }
 }
 ```
 
 ### Phase 4: Integration
+
 In the mob's `.entity.json`:
+
 1. Add the new render controller to the `render_controllers` array.
 2. **CRITICAL:** Ensure it is placed **after** the base render controller.
 
 ---
 
-## ⚠️ Notes
-- Since the ESP uses `Depth: Always`, the outline will render "over" everything except other stencil-masked objects.
-- This version is optimized for performance by removing unnecessary property evaluations during the render tick.
+## 📜 Credits
+- **Developer**: daniswastaken
+- **Foundation**: Built upon Newb Shaders by devendrn.
+
+---
+**Grafika is fully open source.** For the shader source code and development tools, see the [Grafika-Dev Repository](https://github.com/daniswastaken/grafika-dev).
