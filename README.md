@@ -6,7 +6,7 @@
 The "anime-style" branding comes from the pack's emphasis on clean, bold visual separation. Just like the hand-drawn outlines in classic animation, our **Stencil Outline System** provides every entity with a sharp border. This creates a distinct visual hierarchy where players and mobs are clearly defined against the world's backgrounds.
 
 > [!IMPORTANT]
-> This pack requires **BetterRenderDragon (BRD)** or **Minecraft Patched** to function correctly.
+> This pack requires **BetterRenderDragon (BRD)** or **Minecraft Patched/MB Loader** to function correctly.
 
 ## ✨ Core Features
 
