@@ -36,8 +36,8 @@
 			},
 			"geometry": {
 				"default": "geometry.humanoid.custom",
-				"outline_layer": "geometry.player_outline",
-				"wide_outline_layer": "geometry.wide_player_outline",
+				"outline_layer": "geometry.arx.humanoid.customslim.outline",
+				"wide_outline_layer": "geometry.arx.humanoid.custom.outline",
 				"cape_outline": "geometry.cape_outline",
 				"elytra_outline": "geometry.elytra_outline",
 				"armor_1_outline": "geometry.armor_1_outline",
@@ -147,7 +147,7 @@
           // Glowing Addon
           "variable.rightarm_pivot = query.get_default_bone_pivot('rightarm', 1);",
           "variable.leftarm_pivot = query.get_default_bone_pivot('leftarm', 1);",
-          "variable.slim = query.get_default_bone_pivot('rightarm', 1) == 21.5 || (variable.short_arm_offset_left == 0.5);",
+          "variable.slim = query.get_default_bone_pivot('rightarm', 1) == 21.5;",
           "variable.wide = !variable.slim;",
           "variable.is_in_ui = !query.is_alive || query.is_sleeping;",
           "variable.property_glow = 0.0;",
