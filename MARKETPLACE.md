@@ -8,7 +8,7 @@ Version 2.0 is **fully optimized** version, fixing all previous outline issues, 
 
 ## 🎨 Why Anime-Style?
 
-![By the Fireplace (Loading Image)](https://cdn.jsdelivr.net/gh/daniswastaken/hdn@main/grafika/by-the-fireplace.png) We call it "Anime-Style" because of the **Outlines**. Every player gets a sharp, drawn-style outline. It looks just like the clean, bold lines in your favorite anime. It makes characters pop and gives the world a unique, anime feel.
+![Tell a Tale (Loading Image)](https://cdn.jsdelivr.net/gh/daniswastaken/hdn@main/grafika/tell-a-tale.png) We call it "Anime-Style" because of the **Outlines**. Every player gets a sharp, drawn-style outline. It looks just like the clean, bold lines in your favorite anime. It makes characters pop and gives the world a unique, anime feel.
 
 ## ✨ Features
 
