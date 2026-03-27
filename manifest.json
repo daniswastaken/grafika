@@ -12,7 +12,7 @@
     "min_engine_version": [
       1,
       26,
-      0
+      10
     ]
   },
   "modules": [
@@ -34,7 +34,7 @@
     },
     {
       "folder_name": "player_outline",
-      "name": "Player Outline Only",
+      "name": "Player Outline",
       "memory_tier": 1
     }
   ],
