@@ -29,7 +29,7 @@ For the best visual experience, we recommend **disabling the Dithering feature**
 ## 📦 Simple to Install.
 
 *   **Works on**: Windows, Android, iOS.
-*   **Requirements**: Use loader like **BetterRenderDragon**, **Matject**, **Minecraft Patched**, or **MB Loader**.
+*   **Requirements**: Use loader like **BetterRenderDragon**, **Minecraft Patched**, **Matject**, or **MB Loader**.
 *   **Install**: One click. That's it.
 
 
