@@ -32,6 +32,13 @@ For the best visual experience, we recommend **disabling the Dithering feature**
 *   **Requirements**: Use loader like **BetterRenderDragon**, **Matject**, **Minecraft Patched**, or **MB Loader**.
 *   **Install**: One click. That's it.
 
+
+# ⚠️ THE PLAYER OUTLINE ONLY WORKS WITH WINDOWS
+
+If you're on an Android or iOS, the OUTLINE will glitch but THE SHADER STILL 100% WORKS. I'm currently fixing it.
+
 ***
+
+# ℹ️ GRAFIKA SHADER IS VERY LIGHTWEIGHT! For the best experience, please try the full version before using the LITE version.
 
 **Open Source.** Made with ❤️ by daniswastaken. [GitHub](https://github.com/daniswastaken/grafika)
