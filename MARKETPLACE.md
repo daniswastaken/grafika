@@ -1,10 +1,10 @@
 # This Shader Supports MC 26.10+
-
+![Grafika 2.0](https://cdn.jsdelivr.net/gh/daniswastaken/hdn@main/grafika/2-0.png)
 # Grafika v2.0
 
 **Grafika** is a simple, beautiful shader for Minecraft. It makes everything look better, without making your game slower. 
 
-Version 2.0 is **fully optimized** version, fixing all previous outline issues, and now 100% compatible with all devices.
+Version 2.0 is **fully optimized** version, fixing all performance issues on all devices.
 
 ## 🎨 Why Anime-Style?
 
