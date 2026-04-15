@@ -6,7 +6,7 @@
     "uuid": "a794ebf9-e3ba-4e0a-898e-69d017668eb2",
     "version": [
       2,
-      0,
+      1,
       0
     ],
     "min_engine_version": [
@@ -21,7 +21,7 @@
       "uuid": "94a3e43c-276b-425a-b541-98465ebdb408",
       "version": [
         2,
-        0,
+        1,
         0
       ]
     }
@@ -40,7 +40,7 @@
   ],
   "metadata": {
     "authors": [
-      "daniswastaken"
+      "daniswastaken", "devendrn"
     ],
     "url": "https://github.com/daniswastaken/grafika"
   }
