@@ -110,7 +110,7 @@
       "+states": [ "InvertCulling", "EnableStencilTest", "DisableDepthWrite", "Blending" ],
       "+defines": [ "USE_OVERLAY", "DisableCulling" ],
       "-defines": [ "FANCY" ],
-      // Uncomment if you want outline to render behind the wall.
+      // Uncomment this if you want outline to render behind the wall.
       // "depthFunc": "Always",
       "frontFace": {
         "stencilFunc": "NotEqual",

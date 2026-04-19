@@ -1,12 +1,12 @@
 # This Shader Supports MC 26.10+
-![Grafika 2.1](https://cdn.jsdelivr.net/gh/daniswastaken/hdn@main/grafika/2-0.png)
+
 # Grafika v2.1
 
 **Grafika** is an anime-styled, simple and lightweight but still beautiful shader for Minecraft.
 
 ## Anime-Style
 
-![Tell a Tale (Loading Image)](https://cdn.jsdelivr.net/gh/daniswastaken/hdn@main/grafika/tell-a-tale.png) We call it "Anime-Style" because of the **Outlines** given to every player that looks like in anime show.
+It's "Anime-Style" because of the **Outlines** given to every player that looks like in anime show.
 
 ## Features
 
@@ -18,10 +18,6 @@
 
 *   **Shader Only**: Just the shader. No outlines.
 *   **Player Outline**: Anime-style outlines for players and shader.
-
-## Recommended Settings.
-
-For the best visual experience, I recommend **disabling the Dithering feature** for both blocks and player mobs.
 
 ## Simple to Install.
 
@@ -41,4 +37,8 @@ If you're on an Android or iOS, the OUTLINE will glitch but THE SHADER STILL 100
 
 GRAFIKA SHADER IS NOT AFFILIATED, RELATED, OR REGISTERED UNDER THE NEWB BRAND. GRAFIKA SHADER STANDS AS IT'S OWN SEPARATE ENTITY AND FULLY COMPLY WITH ANY LICENSING AND COPYRIGHT LAWS.
 
-THE ENTIRETY OF GRAFIKA SHADER IS LICENSED UNDER THE MIT LICENSE, FREE TO USE FOR MODIFICATIONS OR REDISTRIBUTION AND AVAILABLE ON GITHUB.
+THE ENTIRETY OF GRAFIKA SHADER (NOT INCLUDING TEXTURES OBTAINED FROM VANILLA TWEAKS AND/OR BEDROCK TWEAKS) IS LICENSED UNDER THE MIT LICENSE, FREE TO USE FOR MODIFICATIONS OR REDISTRIBUTION AND AVAILABLE ON GITHUB.
+
+# Credits:
+Vanilla Tweaks: https://vanillatweaks.net/
+Bedrock Tweaks: https://bedrocktweaks.net/
