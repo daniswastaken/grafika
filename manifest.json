@@ -1,18 +1,18 @@
 {
   "format_version": 2,
   "header": {
-    "name": "§lGrafika§r §fShader §l§dV2.1 §r§l- §bWindows",
+    "name": "§lGrafika§r §fShader §l§dV2.3 §r§l- §bWindows",
     "description": "§b§lAn open-source anime-style shader pack.§r\n§eRequires §6BetterRenderDragon (BRD) §eor §6Minecraft Patched.",
     "uuid": "a794ebf9-e3ba-4e0a-898e-69d017668eb2",
     "version": [
       2,
-      1,
+      3,
       0
     ],
     "min_engine_version": [
       1,
       26,
-      10
+      20
     ]
   },
   "modules": [
@@ -21,7 +21,7 @@
       "uuid": "94a3e43c-276b-425a-b541-98465ebdb408",
       "version": [
         2,
-        1,
+        3,
         0
       ]
     }
